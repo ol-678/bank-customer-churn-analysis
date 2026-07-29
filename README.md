@@ -109,7 +109,7 @@ status, credit category, and geography, with a gender filter. When opening it
 on another computer, reconnect the workbook to
 `data/processed/Bank_Churn_Cleaned.csv`.
 
-#<img width="1296" height="744" alt="Screenshot 2026-07-11 at 12 23 38 PM" src="https://github.com/user-attachments/assets/53d4cc2d-466b-4c58-890b-68bb428415e3" />
+<img width="1296" height="744" alt="Screenshot 2026-07-11 at 12 23 38 PM" src="https://github.com/user-attachments/assets/53d4cc2d-466b-4c58-890b-68bb428415e3" />
 
 ## Repository structure
 

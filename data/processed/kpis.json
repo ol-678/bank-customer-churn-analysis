@@ -1,0 +1,7 @@
+{
+  "customers": 10000,
+  "churned_customers": 2037,
+  "overall_churn_rate": 0.2037,
+  "age_available_customers": 9997,
+  "has_credit_card_included": false
+}

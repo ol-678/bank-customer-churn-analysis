@@ -1,0 +1,41 @@
+{
+  "source": "Bank_Churn_Messy.xlsx",
+  "raw_rows": {
+    "Customer_Info": 10001,
+    "Account_Info": 10002
+  },
+  "exact_duplicates_removed": {
+    "Customer_Info": 1,
+    "Account_Info": 2
+  },
+  "processed_rows": 10000,
+  "unique_customer_ids": 10000,
+  "tenure_mismatches": 0,
+  "missing_values": {
+    "Surname": 3,
+    "Age": 3,
+    "HasCrCard": 10000,
+    "EstimatedSalary": 3,
+    "AgeGroup": 3
+  },
+  "geography_values": [
+    "France",
+    "Germany",
+    "Spain"
+  ],
+  "has_credit_card": {
+    "raw_column_duplicated_activity_status": true,
+    "action": "Set HasCrCard to missing and exclude it from analysis because the true values cannot be inferred from the messy workbook."
+  },
+  "analysis_exclusions": {
+    "HasCrCard": "Unreliable source field.",
+    "AgeGroup": "3 records lack age.",
+    "EstimatedSalary": "3 invalid sentinel values were converted to missing."
+  },
+  "reference_comparison_only": {
+    "reference_rows": 10000,
+    "reference_unique_customer_ids": 10000,
+    "shared_customer_ids": 10000,
+    "note": "The reference file was used only to validate row coverage; it was not used to fill missing or unreliable raw values."
+  }
+}

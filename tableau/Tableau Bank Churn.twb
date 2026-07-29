@@ -1,0 +1,2016 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0603.1643                               -->
+<workbook original-version='18.1' source-build='2026.2.0 (20262.26.0603.1643)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Bank_Churn' inline='true' name='federated.1kl1v240109d151fo963o1elmwgp' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Bank_Churn' name='textscan.0qzx7c51h0absc1gqzvha19mow7p'>
+            <connection class='textscan' directory='/Users/ol678/Downloads/Bank Churn Dataset' filename='Bank_Churn.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0qzx7c51h0absc1gqzvha19mow7p' name='Bank_Churn_Cleaned.csv' table='[Bank_Churn_Cleaned#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='CustomerId' ordinal='0' />
+            <column datatype='string' name='Surname' ordinal='1' />
+            <column datatype='integer' name='CreditScore' ordinal='2' />
+            <column datatype='string' name='Geography' ordinal='3' />
+            <column datatype='string' name='Gender' ordinal='4' />
+            <column datatype='integer' name='Age' ordinal='5' />
+            <column datatype='integer' name='Tenure' ordinal='6' />
+            <column datatype='real' name='Balance' ordinal='7' />
+            <column datatype='integer' name='NumOfProducts' ordinal='8' />
+            <column datatype='integer' name='HasCrCard' ordinal='9' />
+            <column datatype='integer' name='IsActiveMember' ordinal='10' />
+            <column datatype='real' name='EstimatedSalary' ordinal='11' />
+            <column datatype='integer' name='Exited' ordinal='12' />
+            <column datatype='string' name='AgeGroup' ordinal='13' />
+            <column datatype='string' name='BalanceGroup' ordinal='14' />
+            <column datatype='string' name='CreditCategory' ordinal='15' />
+            <column datatype='string' name='ActivityStatus' ordinal='16' />
+            <column datatype='string' name='ProductGroup' ordinal='17' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Bank_Churn_Cleaned.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CustomerId</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CustomerId]</local-name>
+            <parent-name>[Bank_Churn_Cleaned.csv]</parent-name>
+            <remote-alias>CustomerId</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bank_Churn_Cleaned.csv_800A3F79BA864AF4944594BB16E84610]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Surname</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Surname]</local-name>
+            <parent-name>[Bank_Churn_Cleaned.csv]</parent-name>
+            <remote-alias>Surname</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Bank_Churn_Cleaned.csv_800A3F79BA864AF4944594BB16E84610]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CreditScore</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CreditScore]</local-name>
+            <parent-name>[Bank_Churn_Cleaned.csv]</parent-name>
+            <remote-alias>CreditScore</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bank_Churn_Cleaned.csv_800A3F79BA864AF4944594BB16E84610]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Geography</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Geography]</local-name>
+            <parent-name>[Bank_Churn_Cleaned.csv]</parent-name>
+            <remote-alias>Geography</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Bank_Churn_Cleaned.csv_800A3F79BA864AF4944594BB16E84610]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[Bank_Churn_Cleaned.csv]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Bank_Churn_Cleaned.csv_800A3F79BA864AF4944594BB16E84610]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[Bank_Churn_Cleaned.csv]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bank_Churn_Cleaned.csv_800A3F79BA864AF4944594BB16E84610]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tenure</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Tenure]</local-name>
+            <parent-name>[Bank_Churn_Cleaned.csv]</parent-name>
+            <remote-alias>Tenure</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bank_Churn_Cleaned.csv_800A3F79BA864AF4944594BB16E84610]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Balance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Balance]</local-name>
+            <parent-name>[Bank_Churn_Cleaned.csv]</parent-name>
+            <remote-alias>Balance</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bank_Churn_Cleaned.csv_800A3F79BA864AF4944594BB16E84610]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NumOfProducts</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NumOfProducts]</local-name>
+            <parent-name>[Bank_Churn_Cleaned.csv]</parent-name>
+            <remote-alias>NumOfProducts</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bank_Churn_Cleaned.csv_800A3F79BA864AF4944594BB16E84610]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HasCrCard</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HasCrCard]</local-name>
+            <parent-name>[Bank_Churn_Cleaned.csv]</parent-name>
+            <remote-alias>HasCrCard</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bank_Churn_Cleaned.csv_800A3F79BA864AF4944594BB16E84610]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IsActiveMember</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[IsActiveMember]</local-name>
+            <parent-name>[Bank_Churn_Cleaned.csv]</parent-name>
+            <remote-alias>IsActiveMember</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bank_Churn_Cleaned.csv_800A3F79BA864AF4944594BB16E84610]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EstimatedSalary</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[EstimatedSalary]</local-name>
+            <parent-name>[Bank_Churn_Cleaned.csv]</parent-name>
+            <remote-alias>EstimatedSalary</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bank_Churn_Cleaned.csv_800A3F79BA864AF4944594BB16E84610]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Exited</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Exited]</local-name>
+            <parent-name>[Bank_Churn_Cleaned.csv]</parent-name>
+            <remote-alias>Exited</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bank_Churn_Cleaned.csv_800A3F79BA864AF4944594BB16E84610]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AgeGroup</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[AgeGroup]</local-name>
+            <parent-name>[Bank_Churn_Cleaned.csv]</parent-name>
+            <remote-alias>AgeGroup</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Bank_Churn_Cleaned.csv_800A3F79BA864AF4944594BB16E84610]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BalanceGroup</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BalanceGroup]</local-name>
+            <parent-name>[Bank_Churn_Cleaned.csv]</parent-name>
+            <remote-alias>BalanceGroup</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Bank_Churn_Cleaned.csv_800A3F79BA864AF4944594BB16E84610]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CreditCategory</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CreditCategory]</local-name>
+            <parent-name>[Bank_Churn_Cleaned.csv]</parent-name>
+            <remote-alias>CreditCategory</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Bank_Churn_Cleaned.csv_800A3F79BA864AF4944594BB16E84610]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ActivityStatus</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ActivityStatus]</local-name>
+            <parent-name>[Bank_Churn_Cleaned.csv]</parent-name>
+            <remote-alias>ActivityStatus</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Bank_Churn_Cleaned.csv_800A3F79BA864AF4944594BB16E84610]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ProductGroup</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ProductGroup]</local-name>
+            <parent-name>[Bank_Churn_Cleaned.csv]</parent-name>
+            <remote-alias>ProductGroup</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Bank_Churn_Cleaned.csv_800A3F79BA864AF4944594BB16E84610]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Activity Status' datatype='string' name='[ActivityStatus]' role='dimension' type='nominal' />
+      <column caption='Age Group' datatype='string' name='[AgeGroup]' role='dimension' type='nominal' />
+      <column caption='Balance Group' datatype='string' name='[BalanceGroup]' role='dimension' type='nominal' />
+      <column caption='Credit Category' datatype='string' name='[CreditCategory]' role='dimension' type='nominal' />
+      <column caption='Credit Score' datatype='integer' name='[CreditScore]' role='measure' type='quantitative' />
+      <column caption='Customer Id' datatype='integer' name='[CustomerId]' role='dimension' type='ordinal' />
+      <column caption='Estimated Salary' datatype='real' name='[EstimatedSalary]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Geography]' role='dimension' type='nominal' />
+      <column caption='Has Cr Card' datatype='integer' name='[HasCrCard]' role='measure' type='quantitative' />
+      <column caption='Is Active Member' datatype='integer' name='[IsActiveMember]' role='measure' type='quantitative' />
+      <column caption='Num Of Products' datatype='integer' name='[NumOfProducts]' role='measure' type='quantitative' />
+      <column caption='Product Group' datatype='string' default-role='measure' default-type='ordinal' name='[ProductGroup]' role='dimension' type='nominal' />
+      <column caption='Bank_Churn_Cleaned.csv' datatype='table' name='[__tableau_internal_object_id__].[Bank_Churn_Cleaned.csv_800A3F79BA864AF4944594BB16E84610]' role='measure' type='quantitative' />
+      <group caption='Action (Geography)' hidden='true' name='[Action (Geography)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Geography]' />
+        </groupfilter>
+      </group>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Bank_Churn_Cleaned.csv' id='Bank_Churn_Cleaned.csv_800A3F79BA864AF4944594BB16E84610'>
+            <properties context=''>
+              <relation connection='textscan.0qzx7c51h0absc1gqzvha19mow7p' name='Bank_Churn_Cleaned.csv' table='[Bank_Churn_Cleaned#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='CustomerId' ordinal='0' />
+                  <column datatype='string' name='Surname' ordinal='1' />
+                  <column datatype='integer' name='CreditScore' ordinal='2' />
+                  <column datatype='string' name='Geography' ordinal='3' />
+                  <column datatype='string' name='Gender' ordinal='4' />
+                  <column datatype='integer' name='Age' ordinal='5' />
+                  <column datatype='integer' name='Tenure' ordinal='6' />
+                  <column datatype='real' name='Balance' ordinal='7' />
+                  <column datatype='integer' name='NumOfProducts' ordinal='8' />
+                  <column datatype='integer' name='HasCrCard' ordinal='9' />
+                  <column datatype='integer' name='IsActiveMember' ordinal='10' />
+                  <column datatype='real' name='EstimatedSalary' ordinal='11' />
+                  <column datatype='integer' name='Exited' ordinal='12' />
+                  <column datatype='string' name='AgeGroup' ordinal='13' />
+                  <column datatype='string' name='BalanceGroup' ordinal='14' />
+                  <column datatype='string' name='CreditCategory' ordinal='15' />
+                  <column datatype='string' name='ActivityStatus' ordinal='16' />
+                  <column datatype='string' name='ProductGroup' ordinal='17' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='Bank_Churn_Cleaned' inline='true' name='federated.179wg500xhkbc51h4a1ak0m938a4' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Bank_Churn_Cleaned' name='textscan.1qyxq261ennl9r1g3idmn1cu7lum'>
+            <connection class='textscan' directory='/Users/ol678/Downloads/Bank Churn Dataset' filename='Bank_Churn_Cleaned.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1qyxq261ennl9r1g3idmn1cu7lum' name='Bank_Churn_Cleaned.csv' table='[Bank_Churn_Cleaned#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='CustomerId' ordinal='0' />
+            <column datatype='string' name='Surname' ordinal='1' />
+            <column datatype='integer' name='CreditScore' ordinal='2' />
+            <column datatype='string' name='Geography' ordinal='3' />
+            <column datatype='string' name='Gender' ordinal='4' />
+            <column datatype='integer' name='Age' ordinal='5' />
+            <column datatype='integer' name='Tenure' ordinal='6' />
+            <column datatype='real' name='Balance' ordinal='7' />
+            <column datatype='integer' name='NumOfProducts' ordinal='8' />
+            <column datatype='integer' name='HasCrCard' ordinal='9' />
+            <column datatype='integer' name='IsActiveMember' ordinal='10' />
+            <column datatype='real' name='EstimatedSalary' ordinal='11' />
+            <column datatype='integer' name='Exited' ordinal='12' />
+            <column datatype='string' name='AgeGroup' ordinal='13' />
+            <column datatype='string' name='BalanceGroup' ordinal='14' />
+            <column datatype='string' name='CreditCategory' ordinal='15' />
+            <column datatype='string' name='ActivityStatus' ordinal='16' />
+            <column datatype='integer' name='ProductGroup' ordinal='17' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Bank_Churn_Cleaned.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CustomerId</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CustomerId]</local-name>
+            <parent-name>[Bank_Churn_Cleaned.csv]</parent-name>
+            <remote-alias>CustomerId</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bank_Churn_Cleaned.csv_10D97F764B414C9EBC90B6694E5F4F01]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Surname</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Surname]</local-name>
+            <parent-name>[Bank_Churn_Cleaned.csv]</parent-name>
+            <remote-alias>Surname</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Bank_Churn_Cleaned.csv_10D97F764B414C9EBC90B6694E5F4F01]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CreditScore</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CreditScore]</local-name>
+            <parent-name>[Bank_Churn_Cleaned.csv]</parent-name>
+            <remote-alias>CreditScore</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bank_Churn_Cleaned.csv_10D97F764B414C9EBC90B6694E5F4F01]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Geography</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Geography]</local-name>
+            <parent-name>[Bank_Churn_Cleaned.csv]</parent-name>
+            <remote-alias>Geography</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Bank_Churn_Cleaned.csv_10D97F764B414C9EBC90B6694E5F4F01]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[Bank_Churn_Cleaned.csv]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Bank_Churn_Cleaned.csv_10D97F764B414C9EBC90B6694E5F4F01]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[Bank_Churn_Cleaned.csv]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bank_Churn_Cleaned.csv_10D97F764B414C9EBC90B6694E5F4F01]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tenure</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Tenure]</local-name>
+            <parent-name>[Bank_Churn_Cleaned.csv]</parent-name>
+            <remote-alias>Tenure</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bank_Churn_Cleaned.csv_10D97F764B414C9EBC90B6694E5F4F01]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Balance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Balance]</local-name>
+            <parent-name>[Bank_Churn_Cleaned.csv]</parent-name>
+            <remote-alias>Balance</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bank_Churn_Cleaned.csv_10D97F764B414C9EBC90B6694E5F4F01]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NumOfProducts</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NumOfProducts]</local-name>
+            <parent-name>[Bank_Churn_Cleaned.csv]</parent-name>
+            <remote-alias>NumOfProducts</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bank_Churn_Cleaned.csv_10D97F764B414C9EBC90B6694E5F4F01]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HasCrCard</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HasCrCard]</local-name>
+            <parent-name>[Bank_Churn_Cleaned.csv]</parent-name>
+            <remote-alias>HasCrCard</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bank_Churn_Cleaned.csv_10D97F764B414C9EBC90B6694E5F4F01]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IsActiveMember</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[IsActiveMember]</local-name>
+            <parent-name>[Bank_Churn_Cleaned.csv]</parent-name>
+            <remote-alias>IsActiveMember</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bank_Churn_Cleaned.csv_10D97F764B414C9EBC90B6694E5F4F01]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EstimatedSalary</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[EstimatedSalary]</local-name>
+            <parent-name>[Bank_Churn_Cleaned.csv]</parent-name>
+            <remote-alias>EstimatedSalary</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bank_Churn_Cleaned.csv_10D97F764B414C9EBC90B6694E5F4F01]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Exited</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Exited]</local-name>
+            <parent-name>[Bank_Churn_Cleaned.csv]</parent-name>
+            <remote-alias>Exited</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bank_Churn_Cleaned.csv_10D97F764B414C9EBC90B6694E5F4F01]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AgeGroup</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[AgeGroup]</local-name>
+            <parent-name>[Bank_Churn_Cleaned.csv]</parent-name>
+            <remote-alias>AgeGroup</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Bank_Churn_Cleaned.csv_10D97F764B414C9EBC90B6694E5F4F01]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BalanceGroup</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BalanceGroup]</local-name>
+            <parent-name>[Bank_Churn_Cleaned.csv]</parent-name>
+            <remote-alias>BalanceGroup</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Bank_Churn_Cleaned.csv_10D97F764B414C9EBC90B6694E5F4F01]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CreditCategory</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CreditCategory]</local-name>
+            <parent-name>[Bank_Churn_Cleaned.csv]</parent-name>
+            <remote-alias>CreditCategory</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Bank_Churn_Cleaned.csv_10D97F764B414C9EBC90B6694E5F4F01]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ActivityStatus</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ActivityStatus]</local-name>
+            <parent-name>[Bank_Churn_Cleaned.csv]</parent-name>
+            <remote-alias>ActivityStatus</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Bank_Churn_Cleaned.csv_10D97F764B414C9EBC90B6694E5F4F01]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ProductGroup</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ProductGroup]</local-name>
+            <parent-name>[Bank_Churn_Cleaned.csv]</parent-name>
+            <remote-alias>ProductGroup</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bank_Churn_Cleaned.csv_10D97F764B414C9EBC90B6694E5F4F01]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Activity Status' datatype='string' name='[ActivityStatus]' role='dimension' type='nominal' />
+      <column caption='Age Group' datatype='string' name='[AgeGroup]' role='dimension' type='nominal' />
+      <column caption='Balance Group' datatype='string' name='[BalanceGroup]' role='dimension' type='nominal' />
+      <column caption='Credit Category' datatype='string' name='[CreditCategory]' role='dimension' type='nominal' />
+      <column caption='Credit Score' datatype='integer' name='[CreditScore]' role='measure' type='quantitative' />
+      <column caption='Customer Id' datatype='integer' name='[CustomerId]' role='dimension' type='ordinal' />
+      <column caption='Estimated Salary' datatype='real' name='[EstimatedSalary]' role='measure' type='quantitative' />
+      <column datatype='integer' default-format='p0.0%' name='[Exited]' role='measure' type='quantitative' />
+      <column caption='Has Cr Card' datatype='integer' name='[HasCrCard]' role='measure' type='quantitative' />
+      <column caption='Is Active Member' datatype='integer' name='[IsActiveMember]' role='measure' type='quantitative' />
+      <column caption='Num Of Products' datatype='integer' name='[NumOfProducts]' role='measure' type='quantitative' />
+      <column caption='Product Group' datatype='integer' name='[ProductGroup]' role='measure' type='quantitative' />
+      <column caption='Bank_Churn_Cleaned.csv' datatype='table' name='[__tableau_internal_object_id__].[Bank_Churn_Cleaned.csv_10D97F764B414C9EBC90B6694E5F4F01]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Bank_Churn_Cleaned.csv' id='Bank_Churn_Cleaned.csv_10D97F764B414C9EBC90B6694E5F4F01'>
+            <properties context=''>
+              <relation connection='textscan.1qyxq261ennl9r1g3idmn1cu7lum' name='Bank_Churn_Cleaned.csv' table='[Bank_Churn_Cleaned#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='CustomerId' ordinal='0' />
+                  <column datatype='string' name='Surname' ordinal='1' />
+                  <column datatype='integer' name='CreditScore' ordinal='2' />
+                  <column datatype='string' name='Geography' ordinal='3' />
+                  <column datatype='string' name='Gender' ordinal='4' />
+                  <column datatype='integer' name='Age' ordinal='5' />
+                  <column datatype='integer' name='Tenure' ordinal='6' />
+                  <column datatype='real' name='Balance' ordinal='7' />
+                  <column datatype='integer' name='NumOfProducts' ordinal='8' />
+                  <column datatype='integer' name='HasCrCard' ordinal='9' />
+                  <column datatype='integer' name='IsActiveMember' ordinal='10' />
+                  <column datatype='real' name='EstimatedSalary' ordinal='11' />
+                  <column datatype='integer' name='Exited' ordinal='12' />
+                  <column datatype='string' name='AgeGroup' ordinal='13' />
+                  <column datatype='string' name='BalanceGroup' ordinal='14' />
+                  <column datatype='string' name='CreditCategory' ordinal='15' />
+                  <column datatype='string' name='ActivityStatus' ordinal='16' />
+                  <column datatype='integer' name='ProductGroup' ordinal='17' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.1kl1v240109d151fo963o1elmwgp'>
+      <datasources>
+        <datasource caption='Bank_Churn' name='federated.1kl1v240109d151fo963o1elmwgp' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1kl1v240109d151fo963o1elmwgp'>
+        <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+        <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.1kl1v240109d151fo963o1elmwgp].[none:Gender:nk]'>
+        <groupfilter function='level-members' level='[none:Gender:nk]' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='Activity Status'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Churn by Activity Status&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Bank_Churn' name='federated.1kl1v240109d151fo963o1elmwgp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1kl1v240109d151fo963o1elmwgp'>
+            <column caption='Activity Status' datatype='string' name='[ActivityStatus]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Exited]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column-instance column='[Exited]' derivation='Avg' name='[avg:Exited:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ActivityStatus]' derivation='None' name='[none:ActivityStatus:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1kl1v240109d151fo963o1elmwgp].[none:Gender:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1kl1v240109d151fo963o1elmwgp].[avg:Exited:qk]' value='p0.0%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1kl1v240109d151fo963o1elmwgp].[none:ActivityStatus:nk]</rows>
+        <cols>[federated.1kl1v240109d151fo963o1elmwgp].[avg:Exited:qk]</cols>
+      </table>
+      <simple-id uuid='{040A4CCF-DBF4-4816-AB6A-6B240B986286}' />
+    </worksheet>
+    <worksheet name='Activity Status (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Churn by Activity Status&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Bank_Churn' name='federated.1kl1v240109d151fo963o1elmwgp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1kl1v240109d151fo963o1elmwgp'>
+            <column caption='Activity Status' datatype='string' name='[ActivityStatus]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Exited]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column-instance column='[Exited]' derivation='Avg' name='[avg:Exited:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ActivityStatus]' derivation='None' name='[none:ActivityStatus:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1kl1v240109d151fo963o1elmwgp].[none:Gender:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1kl1v240109d151fo963o1elmwgp].[avg:Exited:qk]' value='p0.0%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1kl1v240109d151fo963o1elmwgp].[none:ActivityStatus:nk]</rows>
+        <cols>[federated.1kl1v240109d151fo963o1elmwgp].[avg:Exited:qk]</cols>
+      </table>
+      <simple-id uuid='{90D77522-B5BF-4FE6-893D-8F102D23E2F7}' />
+    </worksheet>
+    <worksheet name='Age Group'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Churn by Age Group</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Bank_Churn' name='federated.1kl1v240109d151fo963o1elmwgp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1kl1v240109d151fo963o1elmwgp'>
+            <column caption='Age Group' datatype='string' name='[AgeGroup]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Exited]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column-instance column='[Exited]' derivation='Avg' name='[avg:Exited:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[AgeGroup]' derivation='None' name='[none:AgeGroup:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.1kl1v240109d151fo963o1elmwgp].[none:AgeGroup:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;51-60&quot;</bucket>
+              <bucket>&quot;41-50&quot;</bucket>
+              <bucket>&quot;60+&quot;</bucket>
+              <bucket>&quot;31-40&quot;</bucket>
+              <bucket>%null%</bucket>
+              <bucket>&quot;18-30&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1kl1v240109d151fo963o1elmwgp].[none:Gender:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1kl1v240109d151fo963o1elmwgp].[avg:Exited:qk]' value='p0.0%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1kl1v240109d151fo963o1elmwgp].[none:AgeGroup:nk]</rows>
+        <cols>[federated.1kl1v240109d151fo963o1elmwgp].[avg:Exited:qk]</cols>
+      </table>
+      <simple-id uuid='{C21CEEC1-A8B1-469B-8A96-1204271BC3DD}' />
+    </worksheet>
+    <worksheet name='Age Group (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Churn by Age Group</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Bank_Churn' name='federated.1kl1v240109d151fo963o1elmwgp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1kl1v240109d151fo963o1elmwgp'>
+            <column caption='Age Group' datatype='string' name='[AgeGroup]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Exited]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column-instance column='[Exited]' derivation='Avg' name='[avg:Exited:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[AgeGroup]' derivation='None' name='[none:AgeGroup:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.1kl1v240109d151fo963o1elmwgp].[none:AgeGroup:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;18–30&quot;</bucket>
+              <bucket>&quot;31–40&quot;</bucket>
+              <bucket>&quot;41–50&quot;</bucket>
+              <bucket>&quot;51–60&quot;</bucket>
+              <bucket>&quot;60+&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1kl1v240109d151fo963o1elmwgp].[none:Gender:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1kl1v240109d151fo963o1elmwgp].[avg:Exited:qk]' value='p0.0%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1kl1v240109d151fo963o1elmwgp].[none:AgeGroup:nk]</rows>
+        <cols>[federated.1kl1v240109d151fo963o1elmwgp].[avg:Exited:qk]</cols>
+      </table>
+      <simple-id uuid='{74A3B9F3-A1AF-4A5F-ABD4-C8A01005DBA4}' />
+    </worksheet>
+    <worksheet name='Credit Category'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Churn by Credit Category</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Bank_Churn' name='federated.1kl1v240109d151fo963o1elmwgp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1kl1v240109d151fo963o1elmwgp'>
+            <column caption='Credit Category' datatype='string' name='[CreditCategory]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Exited]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column-instance column='[Exited]' derivation='Avg' name='[avg:Exited:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CreditCategory]' derivation='None' name='[none:CreditCategory:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1kl1v240109d151fo963o1elmwgp].[none:Gender:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1kl1v240109d151fo963o1elmwgp].[avg:Exited:qk]' value='p0.0%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1kl1v240109d151fo963o1elmwgp].[none:CreditCategory:nk]</rows>
+        <cols>[federated.1kl1v240109d151fo963o1elmwgp].[avg:Exited:qk]</cols>
+      </table>
+      <simple-id uuid='{276B2204-F249-43D2-A9A5-FAA0306B5FF7}' />
+    </worksheet>
+    <worksheet name='Credit Category (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Churn by Credit Category</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Bank_Churn' name='federated.1kl1v240109d151fo963o1elmwgp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1kl1v240109d151fo963o1elmwgp'>
+            <column caption='Credit Category' datatype='string' name='[CreditCategory]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Exited]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column-instance column='[Exited]' derivation='Avg' name='[avg:Exited:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CreditCategory]' derivation='None' name='[none:CreditCategory:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1kl1v240109d151fo963o1elmwgp].[none:CreditCategory:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1kl1v240109d151fo963o1elmwgp].[avg:Exited:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1kl1v240109d151fo963o1elmwgp].[none:Gender:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1kl1v240109d151fo963o1elmwgp].[avg:Exited:qk]' value='p0.0%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1kl1v240109d151fo963o1elmwgp].[none:CreditCategory:nk]</rows>
+        <cols>[federated.1kl1v240109d151fo963o1elmwgp].[avg:Exited:qk]</cols>
+      </table>
+      <simple-id uuid='{EB20EEBC-F79D-4C66-A856-3AD8985DD8BF}' />
+    </worksheet>
+    <worksheet name='Geography'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Churn by Geography</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Bank_Churn' name='federated.1kl1v240109d151fo963o1elmwgp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1kl1v240109d151fo963o1elmwgp'>
+            <column datatype='integer' name='[Exited]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Geography]' role='dimension' type='nominal' />
+            <column-instance column='[Exited]' derivation='Avg' name='[avg:Exited:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Geography]' derivation='None' name='[none:Geography:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1kl1v240109d151fo963o1elmwgp].[none:Gender:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1kl1v240109d151fo963o1elmwgp].[avg:Exited:qk]' value='p0.0%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1kl1v240109d151fo963o1elmwgp].[none:Geography:nk]</rows>
+        <cols>[federated.1kl1v240109d151fo963o1elmwgp].[avg:Exited:qk]</cols>
+      </table>
+      <simple-id uuid='{CC7033F2-6224-4DAE-87AE-EC96E21C0D2B}' />
+    </worksheet>
+    <worksheet name='Geography (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Churn by Geography</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Bank_Churn' name='federated.1kl1v240109d151fo963o1elmwgp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1kl1v240109d151fo963o1elmwgp'>
+            <column datatype='integer' name='[Exited]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Geography]' role='dimension' type='nominal' />
+            <column-instance column='[Exited]' derivation='Avg' name='[avg:Exited:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Geography]' derivation='None' name='[none:Geography:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1kl1v240109d151fo963o1elmwgp].[none:Gender:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1kl1v240109d151fo963o1elmwgp].[avg:Exited:qk]' value='p0.0%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#4e79a7' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1kl1v240109d151fo963o1elmwgp].[none:Geography:nk]</rows>
+        <cols>[federated.1kl1v240109d151fo963o1elmwgp].[avg:Exited:qk]</cols>
+      </table>
+      <simple-id uuid='{5D3E52B0-5A61-4D33-A320-9F0FB821D696}' />
+    </worksheet>
+    <worksheet name='Product Group'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Churn by Product Group</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Bank_Churn' name='federated.1kl1v240109d151fo963o1elmwgp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1kl1v240109d151fo963o1elmwgp'>
+            <column datatype='integer' name='[Exited]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column caption='Product Group' datatype='string' default-role='measure' default-type='ordinal' name='[ProductGroup]' role='dimension' type='nominal' />
+            <column-instance column='[Exited]' derivation='Avg' name='[avg:Exited:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[ProductGroup]' derivation='None' name='[none:ProductGroup:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1kl1v240109d151fo963o1elmwgp].[none:Gender:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1kl1v240109d151fo963o1elmwgp].[avg:Exited:qk]' value='p0.0%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1kl1v240109d151fo963o1elmwgp].[none:ProductGroup:nk]</rows>
+        <cols>[federated.1kl1v240109d151fo963o1elmwgp].[avg:Exited:qk]</cols>
+      </table>
+      <simple-id uuid='{1588944C-35C2-4A51-AE6B-02D1145A20EC}' />
+    </worksheet>
+    <worksheet name='Product Group (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Churn by Product Group</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Bank_Churn' name='federated.1kl1v240109d151fo963o1elmwgp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1kl1v240109d151fo963o1elmwgp'>
+            <column datatype='integer' name='[Exited]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column caption='Product Group' datatype='string' default-role='measure' default-type='ordinal' name='[ProductGroup]' role='dimension' type='nominal' />
+            <column-instance column='[Exited]' derivation='Avg' name='[avg:Exited:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[ProductGroup]' derivation='None' name='[none:ProductGroup:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1kl1v240109d151fo963o1elmwgp].[none:Gender:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.1kl1v240109d151fo963o1elmwgp].[avg:Exited:qk]' value='55' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.1kl1v240109d151fo963o1elmwgp].[none:ProductGroup:nk]' value='20' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1kl1v240109d151fo963o1elmwgp].[avg:Exited:qk]' value='p0.0%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1kl1v240109d151fo963o1elmwgp].[none:ProductGroup:nk]</rows>
+        <cols>[federated.1kl1v240109d151fo963o1elmwgp].[avg:Exited:qk]</cols>
+      </table>
+      <simple-id uuid='{18D509C6-64D6-44A2-92E2-2F4FAF8FD984}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Bank Customer Churn Analysis'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Bank Customer Churn Dashboard </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='900' maxwidth='1300' minheight='900' minwidth='1300' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='Bank_Churn' name='federated.1kl1v240109d151fo963o1elmwgp' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1kl1v240109d151fo963o1elmwgp'>
+        <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+        <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98222' id='50' param='vert' type-v2='layout-flow' w='98770' x='615' y='889'>
+            <zone h='4667' id='51' type-v2='title' w='98770' x='615' y='889'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='93555' id='37' param='horz' type-v2='layout-flow' w='98770' x='615' y='5556'>
+              <zone h='93555' id='35' type-v2='layout-basic' w='98770' x='615' y='5556'>
+                <zone h='38889' id='3' name='Geography (2)' w='98770' x='615' y='60222'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='27777' id='5' name='Age Group (2)' w='49385' x='615' y='5556'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='26889' id='6' name='Activity Status (2)' w='49384' x='615' y='33333'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='27777' id='7' name='Product Group (2)' w='37466' x='50000' y='5556'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='26889' id='8' name='Credit Category (2)' w='49386' x='49999' y='33333'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='27777' id='38' name='Age Group (2)' param='[federated.1kl1v240109d151fo963o1elmwgp].[none:Gender:nk]' type-v2='filter' values='database' w='11919' x='87466' y='5556'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run fontalignment='1'>Bank Customer Churn Dashboard </run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1400' minheight='1400' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='81' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98222' id='80' param='vert' type-v2='layout-flow' w='98770' x='615' y='889'>
+                <zone h='4667' id='51' type-v2='title' w='98770' x='615' y='889'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='27777' id='38' mode='checkdropdown' name='Age Group (2)' param='[federated.1kl1v240109d151fo963o1elmwgp].[none:Gender:nk]' type-v2='filter' values='database' w='11919' x='87466' y='5556'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='242' h='27777' id='5' is-fixed='true' name='Age Group (2)' w='49385' x='615' y='5556'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='242' h='27777' id='7' is-fixed='true' name='Product Group (2)' w='37466' x='50000' y='5556'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='234' h='26889' id='6' is-fixed='true' name='Activity Status (2)' w='49384' x='615' y='33333'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='234' h='26889' id='8' is-fixed='true' name='Credit Category (2)' w='49386' x='49999' y='33333'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38889' id='3' is-fixed='true' name='Geography (2)' w='98770' x='615' y='60222'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{985F7798-A49D-4646-9AA6-02D846B9A8E8}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='51'>
+    <window class='worksheet' name='Geography'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1kl1v240109d151fo963o1elmwgp].[none:Gender:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0447EE4A-8065-43D3-868A-15007CC559A8}' />
+    </window>
+    <window class='worksheet' name='Geography (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7EFD9965-195C-47BB-BD6C-3FFE6B4E42DB}' />
+    </window>
+    <window class='worksheet' name='Age Group (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{21066E74-7ACC-4643-829B-CFF346EA5E30}' />
+    </window>
+    <window class='worksheet' name='Age Group'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{640E01BA-7B3D-4032-A207-BF8212ECF92E}' />
+    </window>
+    <window class='worksheet' name='Activity Status'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E760A848-265F-4FD1-A0E0-057381D5EC64}' />
+    </window>
+    <window class='worksheet' name='Activity Status (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{355A528B-2EE8-4D42-9757-E314E5CD2EF2}' />
+    </window>
+    <window class='worksheet' name='Product Group'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B7B362B3-493D-422B-ACCE-64E458E7B397}' />
+    </window>
+    <window class='worksheet' name='Product Group (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{46E9E203-8AF9-409C-95EB-8A0A3FB6A9C9}' />
+    </window>
+    <window class='worksheet' name='Credit Category'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7DA15450-4637-4E4D-A04F-A63EA14861BC}' />
+    </window>
+    <window class='worksheet' name='Credit Category (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8F92EB34-91C1-4672-8BEA-751D9A60E717}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Bank Customer Churn Analysis'>
+      <viewpoints>
+        <viewpoint name='Activity Status (2)' />
+        <viewpoint name='Age Group (2)'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Credit Category (2)' />
+        <viewpoint name='Geography (2)'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Product Group (2)'>
+          <zoom type='fit-width' />
+        </viewpoint>
+      </viewpoints>
+      <active id='51' />
+      <simple-id uuid='{087A358B-AD33-4DA2-8820-05C5F6240E72}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='179' name='Age Group (2)' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Bank Customer Churn Analysis' width='192'>
+      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
+      HEZVVRRFoa2tjfr6ei39mTNnaGlpIRKJsHfvXiYmJkin0ywtLeHxeOjp6dE+1yaTSS5fvozd
+      bgdg7969XL16lUwmQzKZpL6+nu7ubu3kLSwscOvWLVRVpaurC7fbvab/gUCASCSCTqfD5/OR
+      Tqcf6ksqleL8+fM4nU48Hg8dHR1r+uL3+4lGo2Sz2aLqZWRkBJPJRD6ff2S9zM7OEolEtJCX
+      j6qXK1eu4HQ6mZ+fL6petgNb+nzq7OwkFAqRzWbxer34fD4URWFiYoJsNntX2rq6OhRFwev1
+      ahPy6+rqqKmpIZFIMDMzc1f62tpaPB4Per2eZDKJTqfDZrPR3NxMIpFgampKS6soCrW1tdhs
+      Nmw2G4qiYLVaqa6uxul0ahMwCqTTaTo7O9m1axezs7OP9N9ms6HX6/F6vaTT6TV9MZlMVFVV
+      0dDQQCQSeaQvi4uLxOPxouolnU4jSRImk6moeinUXzqdLqpe2traiEQiRdfLdmBLX4EWFxdR
+      VRWr1crKygoNDQ3aGKNCR0WBwrqvsizj8XgwmUyEQiEaGhrI5/OsrKxodzpVVZmamsLpdJJK
+      pbS1ZlOpFA6HQ7s7FpbQTCaThMNhvF4vsixrdzyLxYJeryeVSuFyubQxTgsLC0iShNFoxOFw
+      oNfr1/R/dnYWu91OMpmkqqoKo9H4UF9SqRShUAi32002m8Vut6/pC9yJh7m4uPjIeoE7vbPp
+      dJrFxcVH1ks6nSYUCuHz+UilUo+sl8LMQEVRiqqX7cC2aQMIBFvB9m6iCwRlRgigDBSzMEMu
+      l7tvWyaTKYc7gjXYnkP1nmCmpqb48ssvee2119DpdNy6dYve3l4aGxv5zW9+Q3d3N7Isk06n
+      mZ2d5bnnniMQCNDc3My5c+d45513troIFYUQwCZz+fJlJEni5s2bSJKELMuMj4/jcrnQ6/U4
+      HA4+/PBDXn75ZWpqapiamiIcDpNIJMQYqi1ANII3maWlJSwWC+l0GlVVOXr0KAcOHKC2tpZ4
+      PI4sy7hcLu1rU+FLS319PalUatt9J3/aEQIQVDSiESyoaIQABBWNEICgohECEFQ0QgCCikYI
+      QFDRCAEIKhohAEFFIwQgqGiEAAQVjRCAoKIRAhBUNHcJIBqN8tvf/pahoSGGhoZKMjQ8PPzQ
+      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
+      wJ4AAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='139' name='Geography' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='139' name='Geography (2)' width='192'>
+      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
+      AKE0CYBQ2v8BgByWxvSSiasAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>

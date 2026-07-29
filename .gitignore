@@ -1,0 +1,7 @@
+__pycache__/
+.pytest_cache/
+*.pyc
+.DS_Store
+*.twbr
+INTERVIEW_NOTES.md
+*Project_Review*.pdf
